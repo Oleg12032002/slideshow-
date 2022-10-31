@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Muli', sans-serif;
+  background: rgb(255,251,238);
+  padding: 0px;
+  margin: 0px;
+}
+
+.body {
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: rgb(238, 85, 85);
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 10px 10px 10px 3px rgba(15, 15, 20, 0.2);
+  display: flex;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 20px;
+  bottom: 0px;
+  left: 0px;
+  margin: 0;
+  opacity: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 30px 20px;
+  align-items: center;
+}
+
+
+.header-text-logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+}
+
+
+.img-logo {
+  height: 36px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+}
+
+.header-avatar {
+  background: center no-repeat url("https://t4.ftcdn.net/jpg/03/85/50/01/360_F_385500115_T8QiYsPeliQ5tE3npwOuJNUfunqFBo1U.jpg");
+  background-size: 100%;
+  height: 36px;
+  width:36px;
+  border-radius: 50%;
+}
+
+
+.title {
+  text-align: center;
+  font-size: 100px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  letter-spacing: 20px;
+}
